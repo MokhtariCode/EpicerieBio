@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Épicerie Bio - Votre magasin alimentaire de produits frais et bio">
+    <title>Épicerie Bio - Magasin Alimentaire</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <i class="fas fa-shopping-basket"></i>
+                    <span>Épicerie Bio</span>
+                </div>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#accueil" class="nav-link active">Accueil</a></li>
+                    <li><a href="#produits" class="nav-link">Nos Produits</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#a-propos" class="nav-link">À Propos</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="accueil">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title animate-fade-in">Bienvenue chez Épicerie Bio</h1>
+                <p class="hero-subtitle animate-fade-in">Des produits frais et biologiques pour votre bien-être</p>
+                <div class="hero-buttons animate-fade-in">
+                    <a href="#produits" class="btn btn-primary">Découvrir nos produits</a>
+                    <a href="#contact" class="btn btn-secondary">Nous contacter</a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Produits Bio</h3>
+                    <p>100% biologiques et certifiés</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Livraison Rapide</h3>
+                    <p>Livraison en 24h dans votre région</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Qualité Garantie</h3>
+                    <p>Fraîcheur et qualité assurées</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Service Client</h3>
+                    <p>Une équipe à votre écoute</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="produits">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nos Produits</h2>
+                <p>Découvrez notre sélection de produits frais et biologiques</p>
+            </div>
+            
+            <!-- Filter Buttons -->
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="fruits">Fruits</button>
+                <button class="filter-btn" data-filter="legumes">Légumes</button>
+                <button class="filter-btn" data-filter="produits-laitiers">Produits Laitiers</button>
+                <button class="filter-btn" data-filter="boulangerie">Boulangerie</button>
+            </div>
+
+            <div class="products-grid">
+                <!-- Fruits -->
+                <div class="product-card" data-category="fruits">
+                    <div class="product-image">
+                        <div class="product-badge">Bio</div>
+                        <div class="product-img-placeholder" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                            <i class="fas fa-apple-alt"></i>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Pommes Bio</h3>
+                        <p class="product-description">Pommes fraîches de nos vergers locaux</p>
+                        <div class="product-footer">
+                            <span class="price">2.99€/kg</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="fruits">
+                    <div class="product-image">
+                        <div class="product-badge">Bio</div>
+                        <div class="product-img-placeholder" style="background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);">
+                            <i class="fas fa-lemon"></i>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Oranges Bio</h3>
+                        <p class="product-description">Oranges juteuses d'Espagne</p>
+                        <div class="product-footer">
+                            <span class="price">3.49€/kg</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Légumes -->
+                <div class="product-card" data-category="legumes">
+                    <div class="product-image">
+                        <div class="product-badge">Bio</div>
+                        <div class="product-img-placeholder" style="background: linear-gradient(135deg, #a8e6cf 0%, #56ab2f 100%);">
+                            <i class="fas fa-carrot"></i>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Carottes Bio</h3>
+                        <p class="product-description">Carottes croquantes du terroir</p>
+                        <div class="product-footer">
+                            <span class="price">1.99€/kg</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="legumes">
+                    <div class="product-image">
+                        <div class="product-badge">Bio</div>
+                        <div class="product-img-placeholder" style="background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);">
+                            <i class="fas fa-pepper-hot"></i>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Tomates Bio</h3>
+                        <p class="product-description">Tomates gorgées de soleil</p>
+                        <div class="product-footer">
+                            <span class="price">3.99€/kg</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produits Laitiers -->
+                <div class="product-card" data-category="produits-laitiers">
+                    <div class="product-image">
+                        <div class="product-badge">Bio</div>
+                        <div class="product-img-placeholder" style="background: linear-gradient(135deg, #e0f7fa 0%, #80deea 100%);">
+                            <i class="fas fa-glass-whiskey"></i>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Lait Bio</h3>
+                        <p class="product-description">Lait frais de ferme locale</p>
+                        <div class="product-footer">
+                            <span class="price">2.49€/L</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="produits-laitiers">
+                    <div class="product-image">
+                        <div class="product-badge">Bio</div>
+                        <div class="product-img-placeholder" style="background: linear-gradient(135deg, #fff9c4 0%, #ffeb3b 100%);">
+                            <i class="fas fa-cheese"></i>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Fromage Bio</h3>
+                        <p class="product-description">Fromage artisanal affiné</p>
+                        <div class="product-footer">
+                            <span class="price">8.99€/kg</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Boulangerie -->
+                <div class="product-card" data-category="boulangerie">
+                    <div class="product-image">
+                        <div class="product-badge">Frais</div>
+                        <div class="product-img-placeholder" style="background: linear-gradient(135deg, #f9d5a7 0%, #d4a574 100%);">
+                            <i class="fas fa-bread-slice"></i>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Pain Complet</h3>
+                        <p class="product-description">Pain artisanal cuit au four</p>
+                        <div class="product-footer">
+                            <span class="price">3.50€</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="boulangerie">
+                    <div class="product-image">
+                        <div class="product-badge">Frais</div>
+                        <div class="product-img-placeholder" style="background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);">
+                            <i class="fas fa-cookie"></i>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Viennoiseries</h3>
+                        <p class="product-description">Croissants et pains au chocolat</p>
+                        <div class="product-footer">
+                            <span class="price">1.50€</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nos Services</h2>
+                <p>Des services pensés pour vous faciliter la vie</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <h3>Magasin Physique</h3>
+                    <p>Venez nous rendre visite en magasin pour découvrir tous nos produits et bénéficier des conseils de notre équipe.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shopping-basket"></i>
+                    </div>
+                    <h3>Click & Collect</h3>
+                    <p>Commandez en ligne et récupérez vos courses en magasin en moins de 2 heures, sans frais supplémentaires.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-box-open"></i>
+                    </div>
+                    <h3>Paniers Découverte</h3>
+                    <p>Découvrez nos paniers thématiques composés de produits de saison sélectionnés avec soin.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="a-propos">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="about-img-placeholder">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h2>À Propos de Nous</h2>
+                    <p>Depuis 2010, <strong>Épicerie Bio</strong> s'engage à vous offrir le meilleur des produits biologiques et locaux. Notre mission est de promouvoir une alimentation saine et respectueuse de l'environnement.</p>
+                    <p>Nous travaillons directement avec des producteurs locaux pour vous garantir des produits frais, de saison et cultivés dans le respect de la nature.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3 class="stat-number" data-target="500">0</h3>
+                            <p>Produits Bio</p>
+                        </div>
+                        <div class="stat">
+                            <h3 class="stat-number" data-target="50">0</h3>
+                            <p>Producteurs Locaux</p>
+                        </div>
+                        <div class="stat">
+                            <h3 class="stat-number" data-target="10000">0</h3>
+                            <p>Clients Satisfaits</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Ce que disent nos clients</h2>
+                <p>Découvrez les avis de notre communauté</p>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial-card active">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Excellents produits, toujours frais et de qualité. Le personnel est accueillant et de bon conseil. Je recommande vivement !"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Marie Dupont</h4>
+                            <span>Cliente depuis 2018</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Le service Click & Collect est très pratique. Les produits sont toujours bien préparés et le gain de temps est appréciable !"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Jean Martin</h4>
+                            <span>Client depuis 2020</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"J'adore les paniers découverte ! C'est une excellente façon de découvrir de nouveaux produits bio. Toujours une belle surprise !"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Sophie Lambert</h4>
+                            <span>Cliente depuis 2019</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-controls">
+                <button class="testimonial-prev"><i class="fas fa-chevron-left"></i></button>
+                <div class="testimonial-dots"></div>
+                <button class="testimonial-next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contactez-nous</h2>
+                <p>Une question ? N'hésitez pas à nous contacter</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h3>Adresse</h3>
+                            <p>123 Rue de la Nature<br>75001 Paris, France</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h3>Téléphone</h3>
+                            <p>+33 1 23 45 67 89</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h3>Email</h3>
+                            <p>contact@epiceriebio.fr</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div>
+                            <h3>Horaires</h3>
+                            <p>Lun - Sam: 9h - 20h<br>Dimanche: 9h - 13h</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Votre email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Sujet" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" placeholder="Votre message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Envoyer le message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-shopping-basket"></i> Épicerie Bio</h3>
+                    <p>Votre magasin de produits biologiques et locaux. Une alimentation saine pour un monde meilleur.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Liens Rapides</h4>
+                    <ul>
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#produits">Nos Produits</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#a-propos">À Propos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Informations</h4>
+                    <ul>
+                        <li><a href="#">Mentions Légales</a></li>
+                        <li><a href="#">Politique de confidentialité</a></li>
+                        <li><a href="#">CGV</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Recevez nos offres et nouveautés</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Votre email" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Épicerie Bio. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
